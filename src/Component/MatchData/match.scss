@@ -1,0 +1,37 @@
+.match_box {
+  a {
+    text-decoration: none;
+  }
+  .TeamName {
+    background: #ff471a;
+    padding: 0.4em 0;
+    border-top: 1px solid #fc3;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+
+    .sub_team {
+      color: #fff;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      p {
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+  }
+  .profile_details {
+    width: 100%;
+    margin-right: 3%;
+    background: #fff;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      color: #000;
+      font-family: Verdana, Geneva, sans-serif;
+      line-height: 22px;
+    }
+  }
+}

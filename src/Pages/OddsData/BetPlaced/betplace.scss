@@ -1,0 +1,67 @@
+.popup{
+    margin: auto;
+    padding: 10px 0;
+    position: relative;
+    transition: all 5s ease-in-out;
+    .content {
+        max-height: 30%;
+        overflow: auto;
+        text-align: center;
+        input {
+            width: 100%;
+            display: block;
+            line-height: 40px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 auto 15px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 4px;
+                button {
+                    background-color: #333;
+                    border: 0;
+                    border-radius: 3px;
+                    padding: 8px 14px !important;
+                    color: #fff;
+                    cursor: pointer;
+                    margin-bottom: 5px;
+                }
+                .red-btn {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+.popup-footer{
+    border-top: 1px solid #dcdcdc;
+    padding-top: 15px;
+    width: 100%;
+    button {
+        padding: 10px 25px;
+        margin: 0 3px;
+        background-color: red;
+        color: #fff;
+        border: 0;
+        border-radius: 5px;
+    }
+    .submit-btn {
+        background-color: #6fbd13;
+    }
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: -6px;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.menu_back {
+    border: 1px solid #2f5c94;
+    background: #52b5e1;
+    padding: 7px;
+    margin: 8px 0px;
+    &:hover{
+      border: 1px solid #000;
+      background: #87bb33;
+    }
+  a {
+    
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

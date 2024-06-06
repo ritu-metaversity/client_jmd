@@ -15,6 +15,7 @@ interface DataProps {
   name: string;
   imgUrl: string;
   new:boolean;
+  url:string
 }
 
 const Data: DataProps[] = [
@@ -22,41 +23,49 @@ const Data: DataProps[] = [
     name: "In Play",
     imgUrl: inPlay,
     new:false,
+    url:"/main/inplay"
   },
   {
     name: "live Game",
     imgUrl: live,
     new:true,
+    url:"/main/live-games"
   },
   {
     name: "Upcoming Games",
     imgUrl: allGame,
     new:false,
+    url:"/main/upcoming-games"
   },
   {
     name: "Complete Games",
     imgUrl: CG1,
     new:false,
+    url:"/main/complete-games"
   },
   {
     name: "My Profile",
     imgUrl: profile,
     new:false,
+    url:"/main/my-profile"
   },
   {
     name: "My Ledger",
     imgUrl: ledger,
     new:false,
+    url:"/main/my-ledger"
   },
   {
     name: "Change Password",
     imgUrl: CP,
     new:false,
+    url:"/main/change-password"
   },
   {
     name: "Rules",
     imgUrl: rule,
     new:false,
+    url:"/main/rules"
   },
 ]
 
@@ -70,7 +79,7 @@ const Dashboard = () => {
         {Data?.map((item: DataProps) => (
           <Grid item xs={6}>
             <Box className="dash_main">
-              <Link to="">
+              <Link to={item?.url}>
                 <img src={item?.imgUrl} alt={item?.name} width="112" height="112"/>
                 {item?.new && <NewCom />}
                 <Typography component="p">{item?.name}</Typography>

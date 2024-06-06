@@ -1,0 +1,43 @@
+.dash_main {
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  p {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.blinking {
+  animation: blinkingText 1s infinite;
+  font-family: futura;
+  font-style: italic;
+  color: #fff;
+  background-color: #fc030b;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+@keyframes blinkingText {
+  0% {
+    opacity: 1;
+    color: #ff0;
+  }
+  100% {
+    opacity: 0;
+    color: #fff;
+  }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

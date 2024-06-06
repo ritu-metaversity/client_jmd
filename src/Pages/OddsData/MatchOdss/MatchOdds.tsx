@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material"
+import { Box, Button} from "@mui/material"
 import {type FC } from "react"
 
 interface Props{

@@ -10,35 +10,35 @@ import SessionBet from './SessionBet/SessionBet';
 import BetPlaced from './BetPlaced/BetPlaced';
 import { useState } from 'react';
 
-export interface BetPlaceProps{
-    isBack:boolean;
-    name:string
+export interface BetPlaceProps {
+  isBack: boolean;
+  name: string
 }
 
 const OddsData = () => {
-    const [open, setOpen] = useState(false);
-    const [betPlaceData, setBetPlacedData] = useState<BetPlaceProps>({
-        isBack:false,
-        name:""
-    })
+  const [open, setOpen] = useState(false);
+  const [betPlaceData, setBetPlacedData] = useState<BetPlaceProps>({
+    isBack: false,
+    name: ""
+  })
 
-    const handleOpen = (isBack:boolean, name:string) => {
-        setBetPlacedData((prev) => ({ ...prev, isBack, name }));
-        setOpen(true);
-    };
-    const handleClose = () => {
-      setOpen(false);
-    };
+  const handleOpen = (isBack: boolean, name: string) => {
+    setBetPlacedData((prev) => ({ ...prev, isBack, name }));
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
-    <Box><OddsName title="Bookmaker"/></Box>
-    <Box><MatchOdds handleOpen={handleOpen}/></Box>
-    <Box><SessionData handleOpen={handleOpen}/></Box>
-    <Box><MatchBets /></Box>
-    <Box><SessionBet /></Box>
-    <Box><BackBtn link="/main/upcoming-games" name="BACK TO UPCOMING GAMES"/></Box>
+      <Box><OddsName title="Bookmaker" /></Box>
+      <Box><MatchOdds handleOpen={handleOpen} /></Box>
+      <Box><SessionData handleOpen={handleOpen} /></Box>
+      <Box><MatchBets /></Box>
+      <Box><SessionBet /></Box>
+      <Box><BackBtn link="/main/upcoming-games" name="BACK TO UPCOMING GAMES" /></Box>
 
-    <BetPlaced open={open} betPlaceData={betPlaceData} handleClose={handleClose}/>
+      <BetPlaced open={open} betPlaceData={betPlaceData} handleClose={handleClose} />
     </>
   )
 }

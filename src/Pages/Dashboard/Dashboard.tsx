@@ -1,8 +1,17 @@
-import React from 'react'
+import { Box, Grid } from "@mui/material"
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <Box>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          xs=8
+        </Grid>
+        <Grid item xs={6}>
+          xs=4
+        </Grid>
+      </Grid>
+    </Box>
   )
 }
 

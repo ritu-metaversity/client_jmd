@@ -1,8 +1,20 @@
-import React from 'react'
-
+import { Box, Grid } from '@mui/material'
+import Profileimg from '../../assets/img/ProfileTop.webp'
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <Box>
+      <Grid container>
+        <Grid item xs={4}>
+          <img src={Profileimg} className='profileimg' alt="" />
+        </Grid>
+        <Grid item xs={4}>
+
+        </Grid>
+        <Grid item xs={4}>
+          
+        </Grid>
+      </Grid>
+    </Box>
   )
 }
 

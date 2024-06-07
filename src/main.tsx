@@ -1,9 +1,12 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { createRoot } from "react-dom/client"
 import { Provider } from "react-redux"
-import App from "./App"
+// import App from "./App"
 import { store } from "./app/store"
 import "./index.css"
+import LoadingBallSvg from "./Common/LoadingBallSvg/LoadingBallSvg"
+
+const App = React.lazy(() => import("./App"));
 
 const container = document.getElementById("root")
 
@@ -11,8 +14,10 @@ if (container) {
   const root = createRoot(container)
 
   root.render(
-      <Provider store={store}>
+    <Provider store={store}>
+        <Suspense fallback={<LoadingBallSvg />}>
         <App />
+      </Suspense>
       </Provider>,
   )
 } else {

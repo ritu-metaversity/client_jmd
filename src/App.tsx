@@ -11,6 +11,8 @@ import CompleteGames from "./Pages/CompleteGames/CompleteGames"
 import Rules from "./Pages/Rules/Rules"
 import TermsConditions from "./Pages/TermsConditions/TermsConditions"
 import Profile from "./Pages/profile/Profile"
+import Leadger from "./Pages/leadger/Leadger"
+import ChangePassword from "./Pages/changepassword/ChangePassword"
 
 const App = () => {
   return (
@@ -34,7 +36,8 @@ const App = () => {
               <Route path="/main/complete-games" element={<CompleteGames />} />
               <Route path="/main/rules" element={<Rules />} />
               <Route path="/main/my-profile" element={<Profile />} />
-
+              <Route path="/main/my-ledger" element={<Leadger />} />
+              <Route path="/main/change-password" element={<ChangePassword />} />
             </Route>
           </Routes>
         </>

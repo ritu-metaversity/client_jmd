@@ -1,0 +1,138 @@
+.main_odss {
+  .left_side_data {
+    background-color: rgb(255, 194, 41);
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      color: #000;
+      border: none;
+      font-family: Verdana, Geneva, sans-serif;
+    }
+  }
+  .right_side_data {
+  }
+}
+
+.bet-details-markets {
+  .left_side_data {
+    background-color: rgb(255, 194, 41);
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    border: none;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  .right_side_data {
+    button {
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      color: #fff !important;
+    }
+  }
+  .team_name {
+    font-size: 13px;
+  }
+}
+
+.back {
+  background-color: rgb(75, 177, 252);
+}
+.lay {
+  background-color: rgb(247, 148, 168);
+}
+
+.ButtonK {
+  border-color: #696 #363 #363 #696 !important;
+  border-style: solid !important;
+  border-width: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  font-family:
+    Trebuchet MS,
+    Arial,
+    Helvetica,
+    sans-serif !important;
+  font-size: 16px !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+  
+}
+
+.redText {
+  color: red;
+}
+.greenText {
+  color: #00f;
+}
+
+.menu_odssname {
+  border: 1px solid #2f5c94;
+  background: #52b5e1;
+  padding: 7px;
+  margin: 0px 3px;
+  &:hover{
+    border: 1px solid #000;
+    background: #87bb33;
+  }
+  a {
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.session_left_side_data {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  border: none;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #fff;
+}
+.ButtonSess {
+  color: #000;
+  text-align: left;
+  font-size: 12px;
+  white-space: pre-wrap;
+  padding: 0 10px;
+  border-color: #696 #363 #363 #696;
+  border-style: solid;
+  border-width: 0;
+  font-family:
+    Trebuchet MS,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+}
+.ButtonNRate {
+  font-family:
+    Trebuchet MS,
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  border: 0 solid;
+  color: #000;
+  font-size: 12px;
+  &:hover {
+    color: red;
+    border-color: #696 #363 #363 #696;
+    border-style: solid;
+    border-width: 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+.session_button{
+   
+  line-height: 1.1rem !important;
+display: flex;
+flex-direction: column;
+gap: 2px;
+}

@@ -2,6 +2,8 @@ import "./App.css"
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Mainlayout from "./Common/Mainlayout/Mainlayout"
 import Dashboard from "./Pages/Dashboard/Dashboard"
+
+import Login from "./Pages/login/Login"
 import UpcomingGames from "./Pages/UpcomingGames/UpcomingGames.tsx/UpcomingGames"
 import Inplay from "./Pages/Inplay/Inplay"
 import LiveGames from "./Pages/LiveGames/LiveGames"
@@ -11,10 +13,9 @@ import CompleteGames from "./Pages/CompleteGames/CompleteGames"
 const App = () => {
   return (
     <div className="App">
-      <Router>
-          <>
+      <>
             <Routes>
-              {/* <Route path="/login" element={<Login />} /> */}
+              <Route path="/login" element={<Login />} />
               <Route
                 path="/"
                 element={
